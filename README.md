@@ -4,6 +4,6 @@ The Note-Taker is an node express built application that allows the user to take
 
 ![](./public/assets/images/notetaker.png)
 
-Deployed Heroku Link: https://git.heroku.com/note-taker-21300.git
+Deployed Heroku Link: https://fathomless-fortress-81386.herokuapp.com/notes
 
 Github Repo Link: https://github.com/bendrakeacker/Note-Taker
