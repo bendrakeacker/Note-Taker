@@ -12,9 +12,6 @@ server.use(express.static('public'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 
-server.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
-});
 
 server.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname + '/public/notes.html'));
@@ -69,3 +66,7 @@ server.delete("/api/notes/:id", function (req, res) {
         })
     });
 })
+
+server.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+});
